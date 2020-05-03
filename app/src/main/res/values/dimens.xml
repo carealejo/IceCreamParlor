@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text -->
+    <dimen name="normal_text">12sp</dimen>
+    <dimen name="big_text">24sp</dimen>
+
+    <!-- Margin -->
+    <dimen name="small_x_margin">4dp</dimen>
+    <dimen name="big_x_margin">65dp</dimen>
+    <dimen name="big_margin">46dp</dimen>
+    <dimen name="small_margin">12dp</dimen>
+    <dimen name="normal_margin">24dp</dimen>
+
+    <dimen name="ice_cream_image_size">150dp</dimen>
+    <dimen name="ice_cream_separator_width">100dp</dimen>
+    <dimen name="ice_cream_separator_height">2dp</dimen>
+    <dimen name="ice_cream_continer">260dp</dimen>
+
+    <dimen name="welcome_space">60dp</dimen>
+</resources>

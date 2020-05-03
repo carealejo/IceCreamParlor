@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:id="@+id/container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<LinearLayout
+			android:id="@+id/iceCream1"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/ice_cream_continer"
+			android:layout_weight="1"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:padding="@dimen/normal_margin"
+			android:background="@drawable/icecream_border"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginEnd="@dimen/normal_margin">
+
+			<TextView
+				android:id="@+id/iceCream1Counter"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="1dp"
+				android:layout_marginBottom="@dimen/small_x_margin"
+				android:background="@color/colorAccent"
+				android:textColor="@android:color/white"
+				android:textStyle="bold"
+				android:visibility="invisible"
+				tools:text="3"/>
+
+			<ImageView
+				android:id="@+id/iceCream1Image"
+				android:layout_width="@dimen/ice_cream_image_size"
+				android:layout_height="@dimen/ice_cream_image_size"
+				android:padding="@dimen/small_margin"
+				tools:background="#1cc732"
+				tools:src="@drawable/cone" />
+
+			<View
+				android:layout_width="@dimen/ice_cream_separator_width"
+				android:layout_height="@dimen/ice_cream_separator_height"
+				android:layout_marginTop="@dimen/small_x_margin"
+				android:layout_marginBottom="@dimen/small_x_margin"
+				android:background="@drawable/separator" />
+
+			<TextView
+				android:id="@+id/iceCream1Title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/normal_text"
+				android:textStyle="bold"
+				tools:text="Rosaceae Blue" />
+
+			<TextView
+				android:id="@+id/iceCream1Price"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/normal_text"
+				android:textColor="@android:color/black"
+				tools:text="$0.99" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/iceCream2"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/ice_cream_continer"
+			android:layout_weight="1"
+			android:gravity="center_horizontal"
+			android:padding="@dimen/normal_margin"
+			android:background="@drawable/icecream_border"
+			android:orientation="vertical"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginEnd="@dimen/normal_margin">
+
+			<TextView
+				android:id="@+id/iceCream2Counter"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="1dp"
+				android:layout_marginBottom="@dimen/small_x_margin"
+				android:background="@color/colorAccent"
+				android:textColor="@android:color/white"
+				android:visibility="invisible"
+				android:textStyle="bold"
+				tools:text="3"/>
+
+			<ImageView
+				android:id="@+id/iceCream2Image"
+				android:layout_width="@dimen/ice_cream_image_size"
+				android:layout_height="@dimen/ice_cream_image_size"
+				android:padding="@dimen/small_margin"
+				tools:background="#1cc732"
+				tools:src="@drawable/cone" />
+
+			<View
+				android:layout_width="@dimen/ice_cream_separator_width"
+				android:layout_height="@dimen/ice_cream_separator_height"
+				android:layout_marginTop="@dimen/small_x_margin"
+				android:layout_marginBottom="@dimen/small_x_margin"
+				android:background="@drawable/separator" />
+
+			<TextView
+				android:id="@+id/iceCream2Title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/normal_text"
+				android:textStyle="bold"
+				tools:text="Rosaceae Blue" />
+
+			<TextView
+				android:id="@+id/iceCream2Price"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/normal_text"
+				android:textColor="@android:color/black"
+				tools:text="$0.99" />
+		</LinearLayout>
+
+	</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
