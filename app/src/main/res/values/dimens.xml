@@ -11,10 +11,10 @@
     <dimen name="small_margin">12dp</dimen>
     <dimen name="normal_margin">24dp</dimen>
 
-    <dimen name="ice_cream_image_size">150dp</dimen>
+    <dimen name="ice_cream_image_size">100dp</dimen>
     <dimen name="ice_cream_separator_width">100dp</dimen>
     <dimen name="ice_cream_separator_height">2dp</dimen>
-    <dimen name="ice_cream_continer">260dp</dimen>
+    <dimen name="ice_cream_continer">200dp</dimen>
 
     <dimen name="welcome_space">60dp</dimen>
 </resources>

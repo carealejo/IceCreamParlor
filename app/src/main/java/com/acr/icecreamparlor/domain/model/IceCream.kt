@@ -8,5 +8,6 @@ data class IceCream (
     val type: String,
     var counter: Int = 0
 ) {
-    val completeName = "${name1} ${name2}"
+    val completeName
+        get() = "$name1 $name2"
 }

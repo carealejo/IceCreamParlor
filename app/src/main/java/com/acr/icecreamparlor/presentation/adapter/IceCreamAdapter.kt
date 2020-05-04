@@ -93,14 +93,14 @@ class IceCreamAdapter(private val context: Context, private val listener: Listen
                 holder.iceCream2Image.setBackgroundColor(Color.parseColor(secondIceCream.bg_color))
                 holder.iceCream2Title.text = secondIceCream.completeName
                 holder.iceCream2Price.text = "${secondIceCream.price}"
-                holder.iceCream1Container.setOnClickListener {
+                holder.iceCream2Container.setOnClickListener {
                     if (secondIceCream.counter < 2) {
                         secondIceCream.counter += 1
-                        holder.iceCream1Counter.text = secondIceCream.counter.toString()
-                        holder.iceCream1Counter.visibility = View.VISIBLE
+                        holder.iceCream2Counter.text = secondIceCream.counter.toString()
+                        holder.iceCream2Counter.visibility = View.VISIBLE
                     } else {
                         secondIceCream.counter = 0
-                        holder.iceCream1Counter.visibility = View.INVISIBLE
+                        holder.iceCream2Counter.visibility = View.INVISIBLE
                     }
                     listener.onIceCreamClick(secondIceCream)
                 }
