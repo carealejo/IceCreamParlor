@@ -14,7 +14,7 @@
 		android:gravity="center"
 		android:textStyle="bold"
 		android:textSize="@dimen/big_text"
-		android:text="WELCOME"
+		android:text="@string/welcome"
 		android:textColor="@android:color/white"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
@@ -23,8 +23,8 @@
 	<androidx.recyclerview.widget.RecyclerView
 		android:id="@+id/iceCreams"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginBottom="@dimen/welcome_space"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toTopOf="@+id/order"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/title" />

@@ -2,4 +2,5 @@
 	<string name="app_name">IceCreamParlor</string>
 	<string name="error_getting_data">Error getting the data</string>
 	<string name="order">ORDER</string>
+	<string name="welcome">WELCOME</string>
 </resources>

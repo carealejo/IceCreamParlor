@@ -18,7 +18,7 @@ class WelcomeViewModel @Inject constructor(
 
     fun getIceCreamsData() {
         disposable.add(getIceCreamsDataUseCase()
-            .subscribeOn(Schedulers.computation()).observeOn(AndroidSchedulers.mainThread()).subscribe {
+            .observeOn(AndroidSchedulers.mainThread()).subscribe {
                 iceCreamsData.value = it
             })
     }

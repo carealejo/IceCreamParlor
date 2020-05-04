@@ -1,5 +1,6 @@
 package com.acr.icecreamparlor.presentation.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
@@ -16,6 +17,10 @@ import kotlinx.android.synthetic.main.activity_welcome.*
 import javax.inject.Inject
 
 class WelcomeActivity : BaseActivity(), IceCreamAdapter.Listener {
+
+    companion object {
+        const val ICE_CREAMS_LIST = "ICE_CREAMS_LIST"
+    }
 
     @Inject
     lateinit var welcomeViewModel: WelcomeViewModel
@@ -42,6 +47,15 @@ class WelcomeActivity : BaseActivity(), IceCreamAdapter.Listener {
         })
 
         welcomeViewModel.getIceCreamsData()
+
+        order.setOnClickListener {
+            val bundle = Bundle().apply {
+                putParcelableArray(ICE_CREAMS_LIST, selectedIceCreams.values.toTypedArray())
+            }
+            startActivity(Intent(this, OrderActivity::class.java).apply {
+                putExtras(bundle)
+            })
+        }
     }
 
     override fun onStop() {
